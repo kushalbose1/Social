@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  #get 'welcome/index'
   resources :friend_requests
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
- root to: "home#index"
+ root to: "welcome#index"
  devise_for :users, controllers: {
         sessions: 'users/sessions'
       }
